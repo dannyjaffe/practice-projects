@@ -1,2 +1,26 @@
-1) Find PI to the Nth Digit
-    Enter a number and have the program generate PI up to that many decimal places. Keep a limit to how far the program will go.
+/* Find PI to the Nth Digit
+    > Enter a number and have the program generate PI up to that many decimal places.
+    > Keep a limit to how far the program will go.
+*/
+
+//Boring way: limits to 15 digits
+const piNth = (digit) => {
+  let pi = Math.PI.toString().split('')
+  return console.log(pi[digit + 1])
+};
+
+
+//Harder way: limits to 100 digits?
+const findPi = () => {
+  // piApprox = 4 * ((1/1 - 1/3) + (1/5 - 1/7) + (1/9 - 1/11) + ...)
+  
+  for (i = 1; i < 100; i++) {
+    (1/n - 1/(n+2))
+  };
+  return pi
+};
+
+const piNth = (digit) => {
+  let piString = findPi.toString().split('')
+  return console.log(piString[digit + 1])
+};
